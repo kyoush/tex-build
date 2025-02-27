@@ -1,0 +1,13 @@
+services:
+  tex-builder:
+    build:
+      context: .
+      args:
+        USERNAME: ubuntu
+    container_name: tex-builder
+    privileged: true
+    volumes:
+      - .:/home/ubuntu
+    stdin_open: true
+    tty: true
+    command: ["/bin/bash"]

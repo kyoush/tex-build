@@ -1,0 +1,6 @@
+.bash_history
+
+src/*.dvi
+src/*.pdf
+src/*.aux
+src/*.log
